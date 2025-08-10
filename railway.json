@@ -1,0 +1,11 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "cd backend && ./gradlew build -x test"
+  },
+  "deploy": {
+    "startCommand": "cd backend && java -jar build/libs/booknote-0.0.1-SNAPSHOT.jar",
+    "healthcheckPath": "/api/actuator/health"
+  }
+}
