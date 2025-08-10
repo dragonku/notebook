@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ['nodejs_18', 'gradle_7']
+
+[phases.build]
+cmds = ['cd backend && chmod +x gradlew && ./gradlew build -x test']
+
+[start]
+cmd = 'cd backend && java -Dserver.port=$PORT -jar build/libs/booknote-0.0.1-SNAPSHOT.jar'
