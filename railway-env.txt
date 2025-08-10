@@ -1,0 +1,29 @@
+# Railway 환경변수 설정
+
+# 필수 환경변수들 (Railway 변수 탭에 추가하세요)
+SPRING_PROFILES_ACTIVE=prod
+PORT=8080
+
+# JWT 설정 (보안을 위해 복잡한 키로 변경하세요)
+JWT_SECRET=booknote-super-secret-key-at-least-32-characters-long-change-this-in-production-2024
+JWT_ACCESS_TTL_MIN=15
+JWT_REFRESH_TTL_DAY=14
+
+# PostgreSQL (Railway에서 자동 생성된 변수 사용)
+# POSTGRES_URL (Railway PostgreSQL 서비스에서 자동 생성)
+# POSTGRES_USER (Railway PostgreSQL 서비스에서 자동 생성)  
+# POSTGRES_PASSWORD (Railway PostgreSQL 서비스에서 자동 생성)
+
+# Redis (Railway에서 자동 생성된 변수 사용)
+# REDIS_HOST (Railway Redis 서비스에서 자동 생성)
+# REDIS_PORT (Railway Redis 서비스에서 자동 생성)
+# REDIS_URL (Railway Redis 서비스에서 자동 생성)
+
+# 선택적 환경변수들
+AWS_REGION=ap-northeast-2
+S3_BUCKET=booknote-prod
+
+# 외부 API 키들 (나중에 설정)
+# KAKAO_REST_API_KEY=your-kakao-key
+# NAVER_CLIENT_ID=your-naver-id
+# NAVER_CLIENT_SECRET=your-naver-secret

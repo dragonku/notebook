@@ -1,0 +1,8 @@
+# Vercel 환경변수 설정
+
+# Railway 백엔드 배포 후 나오는 URL로 변경하세요
+# 예: https://booknote-production-xxxx.up.railway.app/api
+VITE_API_URL=https://your-railway-app.railway.app/api
+
+# 개발 모드용 (선택사항)
+NODE_ENV=production
